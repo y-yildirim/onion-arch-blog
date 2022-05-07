@@ -11,6 +11,7 @@ namespace Blog.Persistence.Repositories
         public BaseRepository(ApplicationInMemoryDbContext dbContext)
         {
             _dbContext = dbContext;
+            _dbContext.Database.EnsureCreated();
         }
         public async Task<T> Add(T entity)
         {
