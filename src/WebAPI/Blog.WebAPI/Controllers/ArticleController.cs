@@ -1,7 +1,6 @@
 ﻿using Blog.Application.CQRS.Commands.CreateArticle;
 using Blog.Application.CQRS.Queries.GetAllArticles;
 using Blog.Application.CQRS.Queries.GetArticleById;
-using Blog.Application.Interfaces.Repository;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
